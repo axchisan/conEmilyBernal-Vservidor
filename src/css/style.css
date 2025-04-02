@@ -1,0 +1,38 @@
+/* Fondo morado para toda la página */
+body {
+    background-color: #6a0dad;
+    color: white; /* Texto en blanco para mejor contraste */
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor centrado y con fondo blanco */
+.login-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+}
+
+/* Estilos de los inputs */
+.form-control {
+    border-radius: 5px;
+}
+
+/* Botón de inicio de sesión */
+.btn-primary {
+    background-color: #4b0082; /* Morado oscuro */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #3a0068;
+}
+
+/* Estilos para el cuadro de mensaje */
+.notification {
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+

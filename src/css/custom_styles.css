@@ -1,0 +1,302 @@
+/* Colores personalizados */
+:root {
+    --primary-purple: #6a1b9a;
+    --secondary-purple: #9F7AEA;
+    --light-gray: #F8F9FA;
+    --dark-gray: #333333;
+}
+
+/* Estilo de la barra lateral */
+.sidebar {
+    background-color: #FFFFFF;
+    border-right: 1px solid #E9ECEF;
+}
+
+.sidebar .nav-menu a {
+    color: var(--dark-gray);
+    transition: color 0.3s;
+}
+
+.sidebar .nav-menu a:hover,
+.sidebar .nav-menu a.active {
+    color: var(--primary-purple);
+    background-color: #F1E8FF;
+}
+
+.sidebar .profile img {
+    border: 3px solid var(--secondary-purple);
+}
+
+.sidebar .name {
+    color: var(--dark-gray);
+    font-weight: 600;
+}
+
+/* Estilo de las tarjetas */
+.card-header {
+    background-color: var(--primary-purple);
+    color: white;
+    font-weight: bold;
+    border-bottom: none;
+}
+
+.card-body {
+    background-color: var(--light-gray);
+}
+
+.patient-info {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos de sección */
+.section-title {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: var(--dark-gray);
+    font-weight: 500;
+}
+
+/* Formularios */
+.form-group label {
+    color: var(--dark-gray);
+    font-weight: 500;
+}
+
+.form-control {
+    border-color: #CED4DA;
+    border-radius: 4px;
+}
+
+.form-control:focus {
+    border-color: var(--primary-purple);
+    box-shadow: 0 0 5px rgba(107, 70, 193, 0.5);
+}
+
+
+
+/* Íconos */
+.card-header i {
+    margin-right: 8px;
+    color: #FFFFFF;
+}
+
+.nav-menu i {
+    color: var(--primary-purple);
+    margin-right: 8px;
+}
+
+
+
+/* Alertas */
+.alert {
+    border-radius: 4px;
+}
+
+.alert .delete {
+    background: none;
+    border: none;
+    color: var(--dark-gray);
+    font-size: 1.2rem;
+}
+
+/* Contenedor de botones */
+.button-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: flex-start;
+}
+
+/* Botones personalizados */
+.btn-custom-primary {
+    background-color: var(--primary-purple);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-custom-primary:hover {
+    background-color: #7A1F8D;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-custom-secondary {
+    background-color: var(--secondary-purple);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-custom-secondary:hover {
+    background-color: #8A4AF3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Íconos en botones */
+.btn-custom-primary i,
+.btn-custom-secondary i {
+    font-size: 1rem;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .card-body .row {
+        flex-direction: column;
+    }
+
+    .col-md-6 {
+        width: 100%;
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-custom-primary,
+    .btn-custom-secondary {
+        width: 100%;
+    }
+}
+
+
+
+/* Estilo para el menú desplegable de especialidad */
+#especialidad {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #495057;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Efecto al enfocar el menú */
+#especialidad:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Estilo para las opciones dentro del menú */
+#especialidad option {
+    padding: 8px;
+    background-color: #fff;
+}
+
+
+#especialidad option:hover {
+    background-color: #f8f9fa;
+}
+
+
+/* Estilos para el indicador de carga */
+#loadingIndicator {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+}
+
+.spinner {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.spinner .circle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #6f42c1; 
+    border-radius: 50%;
+    animation: bounce 1.2s infinite ease-in-out;
+}
+
+.spinner .circle-1 {
+    top: 0;
+    left: 0;
+    animation-delay: -0.4s;
+}
+
+.spinner .circle-2 {
+    top: 0;
+    right: 0;
+    animation-delay: -0.2s;
+}
+
+.spinner .circle-3 {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-delay: 0s;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(0.8);
+        opacity: 0.4;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
+
+.loading-text {
+    margin-top: 15px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.6;
+    }
+}
+
+/* Transición suave para mostrar/ocultar el indicador */
+#loadingIndicator {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#loadingIndicator.show {
+    opacity: 1;
+}
