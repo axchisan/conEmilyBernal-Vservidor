@@ -1,0 +1,7 @@
+
+# Archivos subidos por usuarios y volcados con datos
+uploads/**/*
+!uploads/**/
+!uploads/**/.gitkeep
+*.sql
+!Database/esquema.sql
